@@ -42,8 +42,6 @@ The optimization problem minimizes the constant monthly payment:
 
 `min k`
 
-Since the total financing requirement and the repayment horizon are fixed, minimizing the constant monthly payment also minimizes the overall repayment burden.
-
 ## Constraints
 
 The model includes the following constraints:
