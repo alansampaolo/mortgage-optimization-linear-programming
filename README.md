@@ -159,3 +159,31 @@ mortgage-optimization-linear-programming/
 ├── README.md
 ├── mortgage_optimization.ipynb
 └── mortgage_optimization_report.pdf
+
+## Main Files
+
+- `mortgage_optimization.ipynb` — complete Python implementation of the primal, standard-form primal, dual problem, complementary slackness checks and sensitivity analysis
+- `mortgage_optimization_report.pdf` — mathematical formulation, results and interpretation of the optimization problem
+
+## Technologies
+
+- Python
+- Gurobi / gurobipy
+- pandas
+- matplotlib
+- Linear Programming
+
+## Main Findings
+
+- Linear Programming can be used to determine an optimal combination of mortgage loans subject to financial and contractual constraints.
+- The baseline problem produces an optimal constant monthly payment of approximately `€2,792.22`.
+- The primal and dual problems produce the same optimal objective value, confirming strong duality.
+- Complementary slackness conditions are verified numerically.
+- The solution is more sensitive to changes in interest rates than to changes in individual loan borrowing limits.
+- Shadow prices and reduced costs provide additional information on the sensitivity of the optimal solution.
+
+## Limitations
+
+The loan characteristics used in the analysis are assumed rather than obtained from observed mortgage market data.
+
+The project is therefore intended as an optimization and methodological exercise rather than as a real-world mortgage recommendation.
