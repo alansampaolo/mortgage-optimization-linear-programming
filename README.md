@@ -25,7 +25,7 @@ The baseline case assumes:
 - planning horizon: `240 months`;
 - four available mortgage loans: A, B, C and D.
 
-Each loan is characterized by its own monthly interest rate, maturity, maximum available amount and minimum monthly payment. :contentReference[oaicite:0]{index=0}
+Each loan is characterized by its own monthly interest rate, maturity, maximum available amount and minimum monthly payment. 
 
 ## Decision Variables
 
@@ -59,7 +59,7 @@ The outstanding principal evolves according to:
 
 `u_i,t = (1 + r_i) * u_i,t-1 - x_i,t`
 
-The complete primal formulation is reported in the project report. :contentReference[oaicite:1]{index=1}
+The complete primal formulation is reported in the project report.
 
 ## Primal Solution
 
@@ -75,15 +75,14 @@ The optimizer simultaneously determines:
 - the payment allocated to each loan in each month;
 - the outstanding principal over time.
 
-The notebook also provides a graphical representation of the monthly payment allocation across the different loans. :contentReference[oaicite:2]{index=2}
-
+The notebook also provides a graphical representation of the monthly payment allocation across the different loans. 
 ## Standard Form
 
 The primal problem is also rewritten in standard form.
 
 Slack variables are introduced to transform inequality constraints into equality constraints, providing the basis for the derivation of the dual problem.
 
-The standard-form model is then solved again using Gurobi. :contentReference[oaicite:3]{index=3}
+The standard-form model is then solved again using Gurobi.
 
 ## Dual Problem
 
@@ -95,7 +94,7 @@ Dual variables are associated with each primal constraint, while the dual constr
 
 The dual objective is formulated using the corresponding right-hand-side vector and dual variables.
 
-The dual problem is then implemented and solved independently in Gurobi. :contentReference[oaicite:4]{index=4}
+The dual problem is then implemented and solved independently in Gurobi.
 
 ## Strong Duality
 
@@ -107,7 +106,7 @@ The primal and dual optimization problems return the same optimal objective valu
 
 This result verifies the Strong Duality Theorem for the optimization problem.
 
-Strong duality states that, at optimality, the optimal objective value of the primal problem equals the optimal objective value of the corresponding dual problem. :contentReference[oaicite:5]{index=5}
+Strong duality states that, at optimality, the optimal objective value of the primal problem equals the optimal objective value of the corresponding dual problem. 
 
 ## Complementary Slackness
 
@@ -117,7 +116,7 @@ These conditions link the primal and dual optimal solutions.
 
 For each corresponding primal-dual pair, the product between a slack and its associated dual quantity must be equal, or numerically very close, to zero.
 
-The implementation checks these conditions using numerical tolerances to account for floating-point precision. :contentReference[oaicite:6]{index=6}
+The implementation checks these conditions using numerical tolerances to account for floating-point precision. 
 
 ## Sensitivity Analysis
 
@@ -138,7 +137,7 @@ For example:
 - increased borrowing limit for loan D: `€2,791.53`;
 - modified loan availability: `€2,799.72`.
 
-A second dataset with different financing requirements and loan characteristics is also tested. :contentReference[oaicite:7]{index=7}
+A second dataset with different financing requirements and loan characteristics is also tested. 
 
 ## Sensitivity Report
 
@@ -149,7 +148,7 @@ The project also examines:
 
 Reduced costs provide information on how the objective coefficient of a variable would need to change before the variable becomes attractive in the optimal solution.
 
-Shadow prices measure how the optimal objective value changes following a marginal change in the right-hand side of a constraint. :contentReference[oaicite:8]{index=8}
+Shadow prices measure how the optimal objective value changes following a marginal change in the right-hand side of a constraint. 
 
 ## Repository Structure
 
@@ -159,6 +158,7 @@ mortgage-optimization-linear-programming/
 ├── README.md
 ├── mortgage_optimization.ipynb
 └── mortgage_optimization_report.pdf
+```
 
 ## Main Files
 
