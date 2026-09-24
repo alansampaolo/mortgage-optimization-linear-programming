@@ -15,6 +15,8 @@ A home buyer needs to finance a fixed amount and can combine multiple mortgage l
 
 The objective is to determine how much to borrow from each available loan and how to allocate repayments over time in order to minimize the constant total monthly payment.
 
+The broader objective is to show how mathematical optimization can support a practical financing decision by identifying the least costly feasible allocation under multiple contractual constraints.
+
 The optimization problem is solved using Gurobi in Python.
 
 ## Problem Setup
@@ -179,6 +181,7 @@ mortgage-optimization-linear-programming/
 - Complementary slackness conditions are verified numerically.
 - The solution is more sensitive to changes in interest rates than to changes in individual loan borrowing limits.
 - Shadow prices and reduced costs provide additional information on the sensitivity of the optimal solution.
+- The framework illustrates how Linear Programming can be used as a decision support tool for choosing among competing financing alternatives under real world constraints.
 
 ## Limitations
 
