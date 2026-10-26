@@ -20,7 +20,6 @@ The objective was to **determine the optimal allocation across multiple mortgage
 - **Optimal constant monthly payment: €2,792.22** in the baseline case.
 - **Strong duality verified:** the dual problem, solved independently, returns the same optimum, and complementary slackness holds numerically.
 - **Interest rates matter far more than borrowing limits:** a 0.5 percentage-point rise in all annual rates raises the payment to €2,918.85 (+4.5%), while raising the limit of the cheapest loan by €50,000 lowers it by less than €1 (€2,791.53), and removing one loan while enlarging the others raises it to €2,799.72.
-- **Shadow price of the financing constraint:** each additional €1,000 borrowed raises the optimal monthly payment by about €5.60.
 - A second dataset (€300,000, three loans) gives an optimal payment of €1,935.87.
 
 ## Repository
