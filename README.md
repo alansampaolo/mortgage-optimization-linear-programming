@@ -13,7 +13,7 @@ The objective was to **determine the optimal allocation across multiple mortgage
 | **Problem** | Finance €500,000 over 240 months by combining four loans with different maturities (5–20 years), interest rates (about 2.6–3.2% per year), borrowing limits and minimum monthly payments |
 | **Decision variables** | Amount borrowed from each loan, monthly payment on each loan, outstanding principal over time, constant total monthly payment `k` |
 | **Model** | Minimise `k` subject to borrowing limits, principal dynamics `u_i,t = (1 + r_i)·u_i,t−1 − x_i,t`, full repayment at maturity, minimum payments and total financing |
-| **Extensions** | Standard form, dual problem, complementary slackness, sensitivity scenarios, shadow prices, second dataset |
+| **Extensions** | Standard form, dual problem, complementary slackness, sensitivity scenarios, second dataset |
 
 ## Key results
 
